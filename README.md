@@ -1,4 +1,8 @@
 # planTani
+<p align="center">
+    <img width="500" src="https://github.com/Aryobhaskaraputra/capstone-project-plantani/blob/main/logo%20plantani.png" alt="Material Bread logo">
+</p>
+
 ## The Team Members
 Team ID: C23-PS043
 
