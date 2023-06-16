@@ -1,7 +1,7 @@
 # <img width="50" src="https://github.com/Aryobhaskaraputra/capstone-project-plantani/blob/main/Logo/small_logo.png" alt="Small planTani Logo">  **planTani**
 
 <p align="center">
-    <img width="500" src="https://github.com/Aryobhaskaraputra/capstone-project-plantani/blob/main/Logo/plantani_logo.png" alt="Material Bread logo">
+    <img width="500" src="https://github.com/Aryobhaskaraputra/capstone-project-plantani/blob/main/Logo/plantani_logo_lightgreen.png" alt="Material Bread logo">
 </p>
 
 ## The Team Members
