@@ -38,6 +38,6 @@ The app can also be used as a tool by government agencies to monitor crop health
 + The app allows users to take photos of plants suspected of having a disease.
 + The application will process the captured image and provide a diagnosis of the type of disease that may attack the plant.
 + The app will provide complete information on the type of disease detected, including symptoms, treatment, and preventive measures.
-+ The machine learning team will create a machine learning model to classify diseases in plants, as the main feature, using the TensorFlow Library to design a Neural Network (deep learning) using the dataset from the collected results
++ The machine learning team will create a machine learning model to classify diseases in plants, as the main feature, using the TensorFlow Library to design a Neural Network (deep learning) with the dataset from the collected results
 + The cloud computing team will provide cloud services to deploy applications and create image storage by using cloud storage to store images and other data needed.
 + The mobile development team will create a UI design for the application and implement it into Android Studio using the Kotlin programming language.
