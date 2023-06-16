@@ -1,36 +1,34 @@
 ## API MACHINE LEARNING-PlanTani
-## Cara menginstal API ini
-1. Gunakan python versi 3.9 (Rekomendasi)
-2. Clone repositori API ini
-3. Instal semua requirment yang diperlukan (didalam requirements.txt)
-4. Buat folder baru dengan nama "uploads"
+## How to install this API
+1. Use python version 3.9 (Recommendation)
+2. Clone this API repository
+3. Install all required requirements (inside requirements.txt)
+4. Create a new folder with the name "uploads"
 ```
 pip install -r requirments.txt
 ```
-3. Menjalankan API ini
+3. Running this API
 ```
-// dalam mode debug atau developmnt 
+// in development mode 
 python3 app.py
 
-// dalam mode produksi 
+// in production mode 
 gunicorn server_ml:app
 ```
-## Cara menggunakan/consume API ini 
-Cukup akses rute API yang tersedia,
-- Menggunakan curl
+## How to use/consume this API 
+Just access available API route,
+- Using curl
 ```
 // POST 
-curl -X POST -F "file="@sesuaikan dengan nama file foto tanaman yang tersedia di lokal" "link.api.com/predict"
+curl -X POST -F "file="@adjust to the name of the plant photo file available locally" "link.api.com/predict"
 ```
-- Menggunakan folder test/ yang sudah tersedia
+- Using the existing test folder
 ```
  // POST 
- 1. Masukkan setiap gambar tanaman yang ingin di predik ke folder test/ tersebut
- 2. Ubah skrip curl dibawah sesuai kebutuhan, skrip ini tersedia di folder test/
- // Contoh:
+ 1. Insert each plant image that you want to predict into the test/ folder
+ 2. Modify the curl script below as needed, this script is available in the test folder
+ // Example:
  url="link.api.com//"
-curl -X POST -F "file="@sesuaikan dengan nama file foto tanaman yang tersedia di lokal" $url"/predict"
- 3. Buka terminal (Recommended git bash),masuk direktori folder test (cd test), kemduian ketikkan 
-    di terminal : ./test.sh
-
-
+curl -X POST -F "file="@sadjust to the name of the plant photo file available locally" $url"/predict"
+ 3. Open the terminal (Recommended git bash), enter the test folder directory (cd test), then type 
+    in git bash terminal : ./test.sh
