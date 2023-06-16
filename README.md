@@ -10,7 +10,7 @@ You can click this [**link**](https://colab.research.google.com/drive/1RKV3bpWkP
 to access our `Google Colab Project` for the model.
 ## 1. Collect and Load Datasets
 We collect the data from various sources, such as from Google Images, Kaggle, and Mendeley Data, then compile and upload it to Kaggle.
-We load the dataset from [**here**](https://kaggle.com/datasets/02d74928204729b3b367bc993dd155281a6e36208d0333afba42c03db0ec0d4d), this link will connect you to **Kaggle Datasets**, named `nurisyazoya/plantani`.
+We load the dataset from [**here**](https://kaggle.com/datasets/02d74928204729b3b367bc993dd155281a6e36208d0333afba42c03db0ec0d4d), this link will connect you to **Kaggle Datasets**
 ## 2. Pre-processing Datasets
 + The used dataset were split into 3 sets by 80% of the data in the training set, 10% in the validation set, and 10% in the test set.
 + Convert it to numpy array and resize the datasets into 224x224
