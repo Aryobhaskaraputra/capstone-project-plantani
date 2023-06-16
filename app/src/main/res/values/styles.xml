@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PlanTani.FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/light_theme</item>
+    </style>
+
+<!--    <style name="Theme.PlanTani.Camera" parent="Theme.PlanTani">-->
+<!--        <item name="android:background">@color/black</item>-->
+<!--    </style>-->
+
+    <style name="Theme.PlanTani.Image.RoundedSquare" parent="Theme.PlanTani">
+        <item name="cornerSize">10%</item>
+    </style>
+</resources>

@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">PlanTani</string>
+
+    <string name="login">Masuk</string>
+    <string name="sign_up">Daftar</string>
+    <string name="login_to">Masuk ke</string>
+    <string name="sign_up_to">Daftar Akun</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="phone">No. HP</string>
+    <string name="username">Username</string>
+    <string name="password">Kata Sandi</string>
+    <string name="confirm_password">Ulangi Kata Sandi</string>
+    <string name="forgot_password">Lupa Password?</string>
+    <string name="have_account">Sudah mempunyai akun?</string>
+    <string name="dont_have_account">Belum mempunyai akun?</string>
+    <string name="plants">Plants</string>
+    <string name="plants_disease">Plants Disease</string>
+    <string name="view_all">View All (%1$d)</string>
+    <string name="profile">Profile</string>
+    <string name="account_name">Akun Tester</string>
+    <string name="plant_disease">Plant Disease</string>
+    <string name="my_plants">My Plants</string>
+    <string name="profile_settings">Pengaturan Akun</string>
+    <string name="change_password">Change Password</string>
+    <string name="content_description_plantani_logo_icon">Icon Plantani</string>
+    <string name="content_description_plantani_logo_text">Logo Teks Plantani</string>
+    <string name="content_description_account">Akun</string>
+    <string name="edt_empty">%1$s tidak boleh kosong!</string>
+    <string name="edt_email_format">Email harus valid!</string>
+    <string name="predicted_plant">Tanaman A</string>
+    <string name="terdeteksi_penyakit">Terdeteksi penyakit</string>
+    <string name="predicted_disease">Penyakit</string>
+    <string name="learn_more">Learn More</string>
+    <string name="add_to_my_plants">+ My Plants</string>
+    <string name="lokasi_nama_provinsi">Lokasi (Nama Provinsi)</string>
+    <string name="details">Details</string>
+    <string name="treatment">Treatment</string>
+    <string name="climate">Climate</string>
+
+    <string-array name="provinsi">
+        <item>Nanggroe Aceh Darussalam</item>
+        <item>Bali</item>
+        <item>Banten</item>
+        <item>Bangka Belitung</item>
+        <item>Bengkulu</item>
+        <item>Daerah Istimewa Yogyakarta</item>
+        <item>DKI Jakarta</item>
+        <item>Gorontalo</item>
+        <item>Jambi</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+        <item>Kalimantan Barat</item>
+        <item>Kalimantan Selatan</item>
+        <item>Kalimantan Tengah</item>
+        <item>Kalimantan Timur</item>
+        <item>Kalimantan Utara</item>
+        <item>Kepulauan Bangka Belitung</item>
+        <item>Kepulauan Riau</item>
+        <item>Lampung</item>
+        <item>Maluku</item>
+        <item>Maluku Utara</item>
+        <item>Nusa Tenggara Barat</item>
+        <item>Nusa Tenggara Timur</item>
+        <item>Papua</item>
+        <item>Papua Barat</item>
+        <item>Papua Barat Daya</item>
+        <item>Papua Pegunungan</item>
+        <item>Papua Selatan</item>
+        <item>Papua Tengah</item>
+        <item>Riau</item>
+        <item>Sulawesi Barat</item>
+        <item>Sulawesi Selatan</item>
+        <item>Sulawesi Tengah</item>
+        <item>Sulawesi Tenggara</item>
+        <item>Sulawesi Utara</item>
+        <item>Sumatera Barat</item>
+        <item>Sumatera Selatan</item>
+        <item>Sumatera Utara</item>
+    </string-array>
+</resources>

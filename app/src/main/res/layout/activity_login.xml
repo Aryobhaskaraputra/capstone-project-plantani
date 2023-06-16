@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/base_padding"
+    android:background="@color/light_theme"
+    tools:context=".ui.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <id.plantaniteam.plantaniapp.ui.view.PlanTaniEditText
+            android:id="@+id/edt_username"
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="@dimen/edit_text_height"
+            android:inputType="textPersonName"
+            android:hint="@string/username"
+            android:textSize="@dimen/paragraph"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"/>
+
+        <TextView
+            android:id="@+id/tv_sign_in_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_to"
+            android:textSize="@dimen/heading_2"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/dark_green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/edt_username"/>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/plantani"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sign_in_to"
+            android:contentDescription="@string/content_description_plantani_logo_text"/>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo"/>
+
+        <id.plantaniteam.plantaniapp.ui.view.PlanTaniEditText
+            android:id="@+id/edt_password"
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginTop="@dimen/base_margin"
+            android:hint="@string/password"
+            android:textSize="@dimen/paragraph"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_username" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/button_auth_width"
+            android:layout_height="@dimen/button_auth_height"
+            android:layout_marginTop="@dimen/base_margin_doubled"
+            android:background="@drawable/plantani_button"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textSize="@dimen/paragraph"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_password"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_margin"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/paragraph"
+            android:textColor="?android:attr/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_dont_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_margin_doubled"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/dont_have_account"
+            android:textSize="@dimen/paragraph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_sign_up"
+            app:layout_constraintTop_toBottomOf="@id/tv_forgot_password"/>
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_margin_doubled"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sign_up"
+            android:textSize="@dimen/paragraph"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toEndOf="@id/tv_dont_have_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_forgot_password"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

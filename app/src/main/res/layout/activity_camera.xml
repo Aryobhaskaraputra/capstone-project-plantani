@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CameraActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.camera.view.PreviewView>
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/base_margin"
+        android:layout_marginStart="@dimen/base_margin"
+        android:src="@drawable/ic_back_white_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/ic_capture_camera"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="@dimen/base_margin_doubled"
+        android:src="@drawable/ic_camera_white_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_opacity_30"
+        android:clickable="true"
+        android:visibility="gone"
+        android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_popup"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/popup"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_close"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_marginTop="@dimen/base_margin"
+                android:layout_marginEnd="@dimen/base_margin"
+                app:layout_constraintEnd_toEndOf="@+id/ll_popup"
+                app:layout_constraintTop_toTopOf="@+id/ll_popup" />
+
+            <TextView
+                android:id="@+id/tv_predicted_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/predicted_plant"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/heading_3"
+                app:layout_constraintTop_toBottomOf="@id/ic_close"
+                app:layout_constraintStart_toStartOf="@id/ll_popup"
+                app:layout_constraintEnd_toEndOf="@id/ll_popup"/>
+
+            <TextView
+                android:id="@+id/tv_detected_disease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terdeteksi_penyakit"
+                android:textSize="@dimen/paragraph"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_predicted_plants" />
+
+            <TextView
+                android:id="@+id/tv_disease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin"
+                android:text="@string/predicted_disease"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/heading_3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detected_disease" />
+
+            <id.plantaniteam.plantaniapp.ui.view.PlanTaniButton
+                android:id="@+id/btn_learn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin"
+                android:paddingHorizontal="@dimen/base_padding"
+                android:backgroundTint="@color/light_green"
+                android:text="@string/learn_more"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/btn_add_to_my_plants"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_disease" />
+
+            <id.plantaniteam.plantaniapp.ui.view.PlanTaniButton
+                android:id="@+id/btn_add_to_my_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin"
+                android:paddingHorizontal="@dimen/base_padding"
+                android:backgroundTint="@color/light_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/add_to_my_plants"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/tv_disease"
+                app:layout_constraintStart_toEndOf="@id/btn_learn_more"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
